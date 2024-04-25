@@ -4,7 +4,7 @@ class Solution:
         s=list(s)
         while l < r:
             if s[l] != s[r]:
-                if ord(s[l]) >ord(s[r]):
+                if s[l] >s[r]:
                     s[l]=s[r]
                 else:s[r]=s[l]
                 r-=1
