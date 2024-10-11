@@ -6,9 +6,10 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        val = set()
+        a = set()
         while head:
-            if head.next not in val: val.add(head.next)
+            if head.next not in a:
+                a.add(head.next)
             else: return True
             head = head.next
         return False
